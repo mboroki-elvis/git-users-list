@@ -10,7 +10,7 @@ struct UsersCoordinator: View {
     private func viewFor(route: Routes.Authenticated) -> some View {
         switch route {
         case .users:
-            UsersListView()
+            UserListView()
         case .userDetails(let string):
             Text(string)
         }

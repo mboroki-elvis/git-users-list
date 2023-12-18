@@ -1,6 +1,6 @@
 import Foundation
 
-struct UserResponse: Codable, Equatable {
+struct UserResponse: Codable, Equatable, Identifiable {
     static func == (lhs: UserResponse, rhs: UserResponse) -> Bool {
         return lhs.id == rhs.id
     }
@@ -40,4 +40,8 @@ struct UserResponse: Codable, Equatable {
     let type: String
     let siteAdmin: Bool
     let name: String
+}
+
+extension UserResponse {
+    static let `default` = UserResponse(login: "", id: .zero, nodeID: "", avatarURL: "", gravatarID: "", url: "", htmlURL: "", followersURL: "", followingURL: "", gistsURL: "", starredURL: "", subscriptionsURL: "", organizationsURL: "", reposURL: "", eventsURL: "", receivedEventsURL: "", type: "", siteAdmin: false, name: "")
 }

@@ -58,6 +58,13 @@
 		C42FFBA22B30A7320087A243 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFBA12B30A7320087A243 /* AuthenticationView.swift */; };
 		C42FFBA42B30AF4E0087A243 /* AuthDeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFBA32B30AF4E0087A243 /* AuthDeepLink.swift */; };
 		C42FFBA92B30B51C0087A243 /* UsersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFBA82B30B51C0087A243 /* UsersCoordinator.swift */; };
+		C42FFBAB2B30CD130087A243 /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFBAA2B30CD130087A243 /* UsersViewModel.swift */; };
+		C42FFBAD2B30CDCC0087A243 /* UsersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFBAC2B30CDCC0087A243 /* UsersService.swift */; };
+		C42FFBB02B30D3EC0087A243 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFBAF2B30D3EC0087A243 /* ContainerView.swift */; };
+		C42FFBB22B30D40B0087A243 /* UITokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFBB12B30D40B0087A243 /* UITokens.swift */; };
+		C42FFBB42B30D43A0087A243 /* LocalizableKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFBB32B30D43A0087A243 /* LocalizableKeys.swift */; };
+		C42FFBB72B30D4C40087A243 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C42FFBB62B30D4C40087A243 /* Localizable.xcstrings */; };
+		C42FFBB92B30D66E0087A243 /* UserListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFBB82B30D66E0087A243 /* UserListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +140,13 @@
 		C42FFBA12B30A7320087A243 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		C42FFBA32B30AF4E0087A243 /* AuthDeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDeepLink.swift; sourceTree = "<group>"; };
 		C42FFBA82B30B51C0087A243 /* UsersCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCoordinator.swift; sourceTree = "<group>"; };
+		C42FFBAA2B30CD130087A243 /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		C42FFBAC2B30CDCC0087A243 /* UsersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersService.swift; sourceTree = "<group>"; };
+		C42FFBAF2B30D3EC0087A243 /* ContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		C42FFBB12B30D40B0087A243 /* UITokens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITokens.swift; sourceTree = "<group>"; };
+		C42FFBB32B30D43A0087A243 /* LocalizableKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizableKeys.swift; sourceTree = "<group>"; };
+		C42FFBB62B30D4C40087A243 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		C42FFBB82B30D66E0087A243 /* UserListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,7 +202,7 @@
 				C42FFB272B3043C90087A243 /* UI */,
 				C42FFB2B2B3044AE0087A243 /* App */,
 				C42FFB2A2B3044970087A243 /* Modules */,
-				C42FFAFE2B302CF50087A243 /* Assets.xcassets */,
+				C42FFBB52B30D44B0087A243 /* Assets */,
 				C42FFB002B302CF50087A243 /* Preview Content */,
 			);
 			path = GitHubUsers;
@@ -223,6 +237,8 @@
 			isa = PBXGroup;
 			children = (
 				C42FFB252B303E650087A243 /* AuthButtonStyle.swift */,
+				C42FFBB12B30D40B0087A243 /* UITokens.swift */,
+				C42FFBAF2B30D3EC0087A243 /* ContainerView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -252,7 +268,7 @@
 			children = (
 				C42FFB9C2B3097850087A243 /* AuthenticationCoordinator.swift */,
 				C42FFB2C2B3044D20087A243 /* AuthenticationViewModel.swift */,
-				C42FFB412B3055190087A243 /* AuthenticationService.swift */,
+				C42FFBAE2B30CDD50087A243 /* Services */,
 				C42FFBA52B30B0400087A243 /* Models */,
 				C42FFBA02B3099A40087A243 /* Views */,
 			);
@@ -262,8 +278,10 @@
 		C42FFB312B3047DF0087A243 /* UsersList */ = {
 			isa = PBXGroup;
 			children = (
-				C42FFB2F2B3047DB0087A243 /* UsersListView.swift */,
+				C42FFBAA2B30CD130087A243 /* UsersViewModel.swift */,
 				C42FFBA82B30B51C0087A243 /* UsersCoordinator.swift */,
+				C42FFBBA2B30D69C0087A243 /* Views */,
+				C42FFBBB2B30D6AF0087A243 /* Services */,
 			);
 			path = UsersList;
 			sourceTree = "<group>";
@@ -413,6 +431,41 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		C42FFBAE2B30CDD50087A243 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C42FFB412B3055190087A243 /* AuthenticationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C42FFBB52B30D44B0087A243 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C42FFAFE2B302CF50087A243 /* Assets.xcassets */,
+				C42FFBB62B30D4C40087A243 /* Localizable.xcstrings */,
+				C42FFBB32B30D43A0087A243 /* LocalizableKeys.swift */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		C42FFBBA2B30D69C0087A243 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C42FFB2F2B3047DB0087A243 /* UsersListView.swift */,
+				C42FFBB82B30D66E0087A243 /* UserListItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C42FFBBB2B30D6AF0087A243 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C42FFBAC2B30CDCC0087A243 /* UsersService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -519,6 +572,7 @@
 			files = (
 				C42FFB022B302CF50087A243 /* Preview Assets.xcassets in Resources */,
 				C42FFB822B30638F0087A243 /* AppConfig.xcconfig in Resources */,
+				C42FFBB72B30D4C40087A243 /* Localizable.xcstrings in Resources */,
 				C42FFAFF2B302CF50087A243 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,6 +600,7 @@
 			files = (
 				C42FFB8E2B307A0D0087A243 /* AccessTokenRequest.swift in Sources */,
 				C42FFB2D2B3044D20087A243 /* AuthenticationViewModel.swift in Sources */,
+				C42FFBB92B30D66E0087A243 /* UserListItemView.swift in Sources */,
 				C42FFB912B308B3B0087A243 /* KeychainManagerMock.swift in Sources */,
 				C42FFB742B30634D0087A243 /* HTTPFields.swift in Sources */,
 				C42FFB3B2B304D390087A243 /* KeychainKey.swift in Sources */,
@@ -568,24 +623,29 @@
 				C42FFB292B3044930087A243 /* LandingView.swift in Sources */,
 				C42FFB3C2B304D390087A243 /* KeychainManager.swift in Sources */,
 				C42FFB7D2B30634D0087A243 /* Router.swift in Sources */,
+				C42FFBB42B30D43A0087A243 /* LocalizableKeys.swift in Sources */,
 				C42FFB9B2B30976F0087A243 /* SafariWebView.swift in Sources */,
 				C42FFB402B304EEF0087A243 /* AppViewModel.swift in Sources */,
 				C42FFB652B30634D0087A243 /* APIException.swift in Sources */,
 				C42FFB782B30634D0087A243 /* Codable+Extension.swift in Sources */,
 				C42FFB972B308F5E0087A243 /* AppEnvironment+Authenticated.swift in Sources */,
+				C42FFBB22B30D40B0087A243 /* UITokens.swift in Sources */,
 				C42FFB262B303E650087A243 /* AuthButtonStyle.swift in Sources */,
 				C42FFB932B308DDB0087A243 /* AppEnvironment+Mock.swift in Sources */,
 				C42FFB7E2B30634D0087A243 /* PathInfo.swift in Sources */,
 				C42FFB302B3047DB0087A243 /* UsersListView.swift in Sources */,
 				C42FFB9D2B3097850087A243 /* AuthenticationCoordinator.swift in Sources */,
 				C42FFB7A2B30634D0087A243 /* Data+prettyPrinted.swift in Sources */,
+				C42FFBAB2B30CD130087A243 /* UsersViewModel.swift in Sources */,
 				C42FFBA22B30A7320087A243 /* AuthenticationView.swift in Sources */,
 				C42FFB762B30634D0087A243 /* URLRequest+curl.swift in Sources */,
 				C42FFB832B30638F0087A243 /* AppEnvironment.swift in Sources */,
 				C42FFB702B30634D0087A243 /* UserDetailsRequest.swift in Sources */,
 				C42FFB422B3055190087A243 /* AuthenticationService.swift in Sources */,
 				C42FFB792B30634D0087A243 /* NetworkError+Extensions.swift in Sources */,
+				C42FFBAD2B30CDCC0087A243 /* UsersService.swift in Sources */,
 				C42FFB7C2B30634D0087A243 /* RouterStackView.swift in Sources */,
+				C42FFBB02B30D3EC0087A243 /* ContainerView.swift in Sources */,
 				C42FFB6E2B30634D0087A243 /* GitHubAPI.swift in Sources */,
 				C42FFB722B30634D0087A243 /* APIRequest.swift in Sources */,
 				C42FFB712B30634D0087A243 /* UsersRequest.swift in Sources */,
