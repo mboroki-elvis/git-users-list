@@ -39,7 +39,7 @@ struct UserResponse: Codable, Equatable, Identifiable {
     let receivedEventsURL: String
     let type: String
     let siteAdmin: Bool
-    let name: String
+    var name: String?
 }
 
 extension UserResponse {

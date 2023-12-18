@@ -1,4 +1,5 @@
 import SwiftUI
+import Kingfisher
 
 struct UserListItemView: View {
     var user: UserResponse
@@ -6,7 +7,7 @@ struct UserListItemView: View {
     var body: some View {
         HStack {
             // Avatar Image (Replace 'Image("placeholder")' with your actual image)
-            Image("placeholder")
+            KFImage(URL(string: user.avatarURL))
                 .resizable()
                 .frame(width: 50, height: 50)
                 .cornerRadius(25)
@@ -18,7 +19,7 @@ struct UserListItemView: View {
                     .foregroundColor(.blue)
 
                 // Name (Subtitle)
-                Text(user.name)
+                Text(user.name ?? "")
                     .font(.subheadline)
                     .foregroundColor(.gray)
             }

@@ -5,15 +5,19 @@ import Observation
     private(set) var users = [UserResponse]()
     private let service: UsersService
     var error: LocalizedError?
+    var isLoading = false
     init(service: UsersService = UsersServiceImplementation()) {
         self.service = service
     }
 
-    func onAppear() {
+    func fetchData() {
         Task {
             do {
+                defer { self.isLoading = false }
+                self.isLoading = true
                 let lastID: Int? = users.isEmpty ? .zero : users.last?.id
-                self.users = try await service.getUsers(since: lastID ?? .zero)
+                let users = try await service.getUsers(since: lastID ?? .zero)
+                self.users.append(contentsOf: users)
             } catch {
                 self.error = error.toLocalizeError
             }

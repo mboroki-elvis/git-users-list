@@ -7,16 +7,30 @@ struct UserListView: View {
         ContainerView(error: viewModel.error) {
             viewModel.error = nil
         } content: {
-            ScrollView(.vertical, showsIndicators: false) {
-                VStack {
-                    ForEach(viewModel.users) { user in
-                        UserListItemView(user: user)
-                            .onAppear {
-                                if user == viewModel.users.last {}
+            List {
+                ForEach(viewModel.users) { user in
+                    UserListItemView(user: user)
+                        .onAppear {
+                            if user == viewModel.users.last {
+                                viewModel.fetchData()
                             }
-                    }
-                }.refreshable {}
+                        }
+                }
             }
+            .listStyle(PlainListStyle())
+            if viewModel.isLoading {
+                ProgressView()
+                    .progressViewStyle(.circular)
+                    .foregroundStyle(.accent)
+            }
+            Spacer()
+        }
+        .background(Color.container)
+        .task {
+            viewModel.fetchData()
+        }
+        .refreshable {
+            viewModel.fetchData()
         }
     }
 }

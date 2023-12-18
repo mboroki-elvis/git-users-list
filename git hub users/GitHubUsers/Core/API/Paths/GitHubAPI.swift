@@ -12,7 +12,7 @@ enum GitHubAPI {
         case .accessToken:
             return "/login/oauth/access_token"
         case .lists:
-            return "/user"
+            return "/users"
         case .details(let name):
             return "/users/\(name)"
         }
