@@ -8,13 +8,56 @@
 
 /* Begin PBXBuildFile section */
 		C42FFAF92B302CF20087A243 /* GitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFAF82B302CF20087A243 /* GitApp.swift */; };
-		C42FFAFB2B302CF20087A243 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFAFA2B302CF20087A243 /* ContentView.swift */; };
-		C42FFAFD2B302CF20087A243 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFAFC2B302CF20087A243 /* Item.swift */; };
 		C42FFAFF2B302CF50087A243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C42FFAFE2B302CF50087A243 /* Assets.xcassets */; };
 		C42FFB022B302CF50087A243 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C42FFB012B302CF50087A243 /* Preview Assets.xcassets */; };
 		C42FFB0C2B302CF50087A243 /* GitHubUsersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB0B2B302CF50087A243 /* GitHubUsersTests.swift */; };
 		C42FFB162B302CF50087A243 /* GitHubUsersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB152B302CF50087A243 /* GitHubUsersUITests.swift */; };
 		C42FFB182B302CF50087A243 /* GitHubUsersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB172B302CF50087A243 /* GitHubUsersUITestsLaunchTests.swift */; };
+		C42FFB262B303E650087A243 /* AuthButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB252B303E650087A243 /* AuthButtonStyle.swift */; };
+		C42FFB292B3044930087A243 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB282B3044930087A243 /* LandingView.swift */; };
+		C42FFB2D2B3044D20087A243 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB2C2B3044D20087A243 /* AuthenticationViewModel.swift */; };
+		C42FFB302B3047DB0087A243 /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB2F2B3047DB0087A243 /* UsersListView.swift */; };
+		C42FFB392B304D390087A243 /* KeychainManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB352B304D390087A243 /* KeychainManagerImpl.swift */; };
+		C42FFB3B2B304D390087A243 /* KeychainKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB372B304D390087A243 /* KeychainKey.swift */; };
+		C42FFB3C2B304D390087A243 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB382B304D390087A243 /* KeychainManager.swift */; };
+		C42FFB402B304EEF0087A243 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB3F2B304EEF0087A243 /* AppViewModel.swift */; };
+		C42FFB422B3055190087A243 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB412B3055190087A243 /* AuthenticationService.swift */; };
+		C42FFB652B30634D0087A243 /* APIException.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB442B30634D0087A243 /* APIException.swift */; };
+		C42FFB662B30634D0087A243 /* APIEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB452B30634D0087A243 /* APIEnvironment.swift */; };
+		C42FFB6E2B30634D0087A243 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB4F2B30634D0087A243 /* GitHubAPI.swift */; };
+		C42FFB6F2B30634D0087A243 /* AuthenticateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB512B30634D0087A243 /* AuthenticateRequest.swift */; };
+		C42FFB702B30634D0087A243 /* UserDetailsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB522B30634D0087A243 /* UserDetailsRequest.swift */; };
+		C42FFB712B30634D0087A243 /* UsersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB532B30634D0087A243 /* UsersRequest.swift */; };
+		C42FFB722B30634D0087A243 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB542B30634D0087A243 /* APIRequest.swift */; };
+		C42FFB732B30634D0087A243 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB562B30634D0087A243 /* NetworkClient.swift */; };
+		C42FFB742B30634D0087A243 /* HTTPFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB582B30634D0087A243 /* HTTPFields.swift */; };
+		C42FFB752B30634D0087A243 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB592B30634D0087A243 /* NetworkError.swift */; };
+		C42FFB762B30634D0087A243 /* URLRequest+curl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB5B2B30634D0087A243 /* URLRequest+curl.swift */; };
+		C42FFB772B30634D0087A243 /* String+AppStorageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB5C2B30634D0087A243 /* String+AppStorageKey.swift */; };
+		C42FFB782B30634D0087A243 /* Codable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB5D2B30634D0087A243 /* Codable+Extension.swift */; };
+		C42FFB792B30634D0087A243 /* NetworkError+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB5E2B30634D0087A243 /* NetworkError+Extensions.swift */; };
+		C42FFB7A2B30634D0087A243 /* Data+prettyPrinted.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB5F2B30634D0087A243 /* Data+prettyPrinted.swift */; };
+		C42FFB7B2B30634D0087A243 /* NetworkClientImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB602B30634D0087A243 /* NetworkClientImpl.swift */; };
+		C42FFB7C2B30634D0087A243 /* RouterStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB622B30634D0087A243 /* RouterStackView.swift */; };
+		C42FFB7D2B30634D0087A243 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB632B30634D0087A243 /* Router.swift */; };
+		C42FFB7E2B30634D0087A243 /* PathInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB642B30634D0087A243 /* PathInfo.swift */; };
+		C42FFB822B30638F0087A243 /* AppConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = C42FFB802B30638F0087A243 /* AppConfig.xcconfig */; };
+		C42FFB832B30638F0087A243 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB812B30638F0087A243 /* AppEnvironment.swift */; };
+		C42FFB852B3065240087A243 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB842B3065240087A243 /* UserResponse.swift */; };
+		C42FFB8C2B3073680087A243 /* UserDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB8B2B3073680087A243 /* UserDetailsResponse.swift */; };
+		C42FFB8E2B307A0D0087A243 /* AccessTokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB8D2B307A0D0087A243 /* AccessTokenRequest.swift */; };
+		C42FFB902B307AD70087A243 /* AccessTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB8F2B307AD70087A243 /* AccessTokenResponse.swift */; };
+		C42FFB912B308B3B0087A243 /* KeychainManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB362B304D390087A243 /* KeychainManagerMock.swift */; };
+		C42FFB932B308DDB0087A243 /* AppEnvironment+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB922B308DDB0087A243 /* AppEnvironment+Mock.swift */; };
+		C42FFB952B308E690087A243 /* AppEnvionment+Failing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB942B308E690087A243 /* AppEnvionment+Failing.swift */; };
+		C42FFB972B308F5E0087A243 /* AppEnvironment+Authenticated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB962B308F5E0087A243 /* AppEnvironment+Authenticated.swift */; };
+		C42FFB992B308FA40087A243 /* AppEnvironment+EnvironmentNonAuthenticated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB982B308FA40087A243 /* AppEnvironment+EnvironmentNonAuthenticated.swift */; };
+		C42FFB9B2B30976F0087A243 /* SafariWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB9A2B30976F0087A243 /* SafariWebView.swift */; };
+		C42FFB9D2B3097850087A243 /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB9C2B3097850087A243 /* AuthenticationCoordinator.swift */; };
+		C42FFB9F2B3097B90087A243 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFB9E2B3097B90087A243 /* AppCoordinator.swift */; };
+		C42FFBA22B30A7320087A243 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFBA12B30A7320087A243 /* AuthenticationView.swift */; };
+		C42FFBA42B30AF4E0087A243 /* AuthDeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFBA32B30AF4E0087A243 /* AuthDeepLink.swift */; };
+		C42FFBA92B30B51C0087A243 /* UsersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FFBA82B30B51C0087A243 /* UsersCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +80,6 @@
 /* Begin PBXFileReference section */
 		C42FFAF52B302CF20087A243 /* GitHubUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C42FFAF82B302CF20087A243 /* GitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitApp.swift; sourceTree = "<group>"; };
-		C42FFAFA2B302CF20087A243 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C42FFAFC2B302CF20087A243 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		C42FFAFE2B302CF50087A243 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C42FFB012B302CF50087A243 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C42FFB072B302CF50087A243 /* GitHubUsersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubUsersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +88,51 @@
 		C42FFB152B302CF50087A243 /* GitHubUsersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUsersUITests.swift; sourceTree = "<group>"; };
 		C42FFB172B302CF50087A243 /* GitHubUsersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUsersUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C42FFB242B302F0E0087A243 /* git-hub-users-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "git-hub-users-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C42FFB252B303E650087A243 /* AuthButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButtonStyle.swift; sourceTree = "<group>"; };
+		C42FFB282B3044930087A243 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		C42FFB2C2B3044D20087A243 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		C42FFB2F2B3047DB0087A243 /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
+		C42FFB352B304D390087A243 /* KeychainManagerImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainManagerImpl.swift; sourceTree = "<group>"; };
+		C42FFB362B304D390087A243 /* KeychainManagerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainManagerMock.swift; sourceTree = "<group>"; };
+		C42FFB372B304D390087A243 /* KeychainKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainKey.swift; sourceTree = "<group>"; };
+		C42FFB382B304D390087A243 /* KeychainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		C42FFB3F2B304EEF0087A243 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		C42FFB412B3055190087A243 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		C42FFB442B30634D0087A243 /* APIException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIException.swift; sourceTree = "<group>"; };
+		C42FFB452B30634D0087A243 /* APIEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEnvironment.swift; sourceTree = "<group>"; };
+		C42FFB4F2B30634D0087A243 /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
+		C42FFB512B30634D0087A243 /* AuthenticateRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateRequest.swift; sourceTree = "<group>"; };
+		C42FFB522B30634D0087A243 /* UserDetailsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsRequest.swift; sourceTree = "<group>"; };
+		C42FFB532B30634D0087A243 /* UsersRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersRequest.swift; sourceTree = "<group>"; };
+		C42FFB542B30634D0087A243 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		C42FFB562B30634D0087A243 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		C42FFB582B30634D0087A243 /* HTTPFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPFields.swift; sourceTree = "<group>"; };
+		C42FFB592B30634D0087A243 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		C42FFB5B2B30634D0087A243 /* URLRequest+curl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+curl.swift"; sourceTree = "<group>"; };
+		C42FFB5C2B30634D0087A243 /* String+AppStorageKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+AppStorageKey.swift"; sourceTree = "<group>"; };
+		C42FFB5D2B30634D0087A243 /* Codable+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Codable+Extension.swift"; sourceTree = "<group>"; };
+		C42FFB5E2B30634D0087A243 /* NetworkError+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NetworkError+Extensions.swift"; sourceTree = "<group>"; };
+		C42FFB5F2B30634D0087A243 /* Data+prettyPrinted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+prettyPrinted.swift"; sourceTree = "<group>"; };
+		C42FFB602B30634D0087A243 /* NetworkClientImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClientImpl.swift; sourceTree = "<group>"; };
+		C42FFB622B30634D0087A243 /* RouterStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterStackView.swift; sourceTree = "<group>"; };
+		C42FFB632B30634D0087A243 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		C42FFB642B30634D0087A243 /* PathInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathInfo.swift; sourceTree = "<group>"; };
+		C42FFB802B30638F0087A243 /* AppConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = AppConfig.xcconfig; sourceTree = "<group>"; };
+		C42FFB812B30638F0087A243 /* AppEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		C42FFB842B3065240087A243 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		C42FFB8B2B3073680087A243 /* UserDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsResponse.swift; sourceTree = "<group>"; };
+		C42FFB8D2B307A0D0087A243 /* AccessTokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenRequest.swift; sourceTree = "<group>"; };
+		C42FFB8F2B307AD70087A243 /* AccessTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenResponse.swift; sourceTree = "<group>"; };
+		C42FFB922B308DDB0087A243 /* AppEnvironment+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppEnvironment+Mock.swift"; sourceTree = "<group>"; };
+		C42FFB942B308E690087A243 /* AppEnvionment+Failing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppEnvionment+Failing.swift"; sourceTree = "<group>"; };
+		C42FFB962B308F5E0087A243 /* AppEnvironment+Authenticated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppEnvironment+Authenticated.swift"; sourceTree = "<group>"; };
+		C42FFB982B308FA40087A243 /* AppEnvironment+EnvironmentNonAuthenticated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppEnvironment+EnvironmentNonAuthenticated.swift"; sourceTree = "<group>"; };
+		C42FFB9A2B30976F0087A243 /* SafariWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebView.swift; sourceTree = "<group>"; };
+		C42FFB9C2B3097850087A243 /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		C42FFB9E2B3097B90087A243 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		C42FFBA12B30A7320087A243 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		C42FFBA32B30AF4E0087A243 /* AuthDeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDeepLink.swift; sourceTree = "<group>"; };
+		C42FFBA82B30B51C0087A243 /* UsersCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +184,10 @@
 			isa = PBXGroup;
 			children = (
 				C42FFB242B302F0E0087A243 /* git-hub-users-Info.plist */,
-				C42FFAF82B302CF20087A243 /* GitApp.swift */,
-				C42FFAFA2B302CF20087A243 /* ContentView.swift */,
-				C42FFAFC2B302CF20087A243 /* Item.swift */,
+				C42FFB3D2B304D520087A243 /* Core */,
+				C42FFB272B3043C90087A243 /* UI */,
+				C42FFB2B2B3044AE0087A243 /* App */,
+				C42FFB2A2B3044970087A243 /* Modules */,
 				C42FFAFE2B302CF50087A243 /* Assets.xcassets */,
 				C42FFB002B302CF50087A243 /* Preview Content */,
 			);
@@ -130,6 +217,200 @@
 				C42FFB172B302CF50087A243 /* GitHubUsersUITestsLaunchTests.swift */,
 			);
 			path = GitHubUsersUITests;
+			sourceTree = "<group>";
+		};
+		C42FFB272B3043C90087A243 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C42FFB252B303E650087A243 /* AuthButtonStyle.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C42FFB2A2B3044970087A243 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C42FFB2E2B3044D70087A243 /* Auth */,
+				C42FFB312B3047DF0087A243 /* UsersList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C42FFB2B2B3044AE0087A243 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C42FFAF82B302CF20087A243 /* GitApp.swift */,
+				C42FFB3F2B304EEF0087A243 /* AppViewModel.swift */,
+				C42FFB9E2B3097B90087A243 /* AppCoordinator.swift */,
+				C42FFB7F2B30638F0087A243 /* Configuration */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C42FFB2E2B3044D70087A243 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				C42FFB9C2B3097850087A243 /* AuthenticationCoordinator.swift */,
+				C42FFB2C2B3044D20087A243 /* AuthenticationViewModel.swift */,
+				C42FFB412B3055190087A243 /* AuthenticationService.swift */,
+				C42FFBA52B30B0400087A243 /* Models */,
+				C42FFBA02B3099A40087A243 /* Views */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		C42FFB312B3047DF0087A243 /* UsersList */ = {
+			isa = PBXGroup;
+			children = (
+				C42FFB2F2B3047DB0087A243 /* UsersListView.swift */,
+				C42FFBA82B30B51C0087A243 /* UsersCoordinator.swift */,
+			);
+			path = UsersList;
+			sourceTree = "<group>";
+		};
+		C42FFB342B304D390087A243 /* KeychainManager */ = {
+			isa = PBXGroup;
+			children = (
+				C42FFB362B304D390087A243 /* KeychainManagerMock.swift */,
+				C42FFB352B304D390087A243 /* KeychainManagerImpl.swift */,
+				C42FFB372B304D390087A243 /* KeychainKey.swift */,
+				C42FFB382B304D390087A243 /* KeychainManager.swift */,
+			);
+			path = KeychainManager;
+			sourceTree = "<group>";
+		};
+		C42FFB3D2B304D520087A243 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C42FFB432B30634D0087A243 /* API */,
+				C42FFB552B30634D0087A243 /* Networking */,
+				C42FFB612B30634D0087A243 /* Routing */,
+				C42FFB342B304D390087A243 /* KeychainManager */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C42FFB432B30634D0087A243 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C42FFB862B3066600087A243 /* Models */,
+				C42FFB462B30634D0087A243 /* Responses */,
+				C42FFB4E2B30634D0087A243 /* Paths */,
+				C42FFB502B30634D0087A243 /* Requests */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C42FFB462B30634D0087A243 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				C42FFB842B3065240087A243 /* UserResponse.swift */,
+				C42FFB8F2B307AD70087A243 /* AccessTokenResponse.swift */,
+				C42FFB8B2B3073680087A243 /* UserDetailsResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		C42FFB4E2B30634D0087A243 /* Paths */ = {
+			isa = PBXGroup;
+			children = (
+				C42FFB4F2B30634D0087A243 /* GitHubAPI.swift */,
+			);
+			path = Paths;
+			sourceTree = "<group>";
+		};
+		C42FFB502B30634D0087A243 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				C42FFB512B30634D0087A243 /* AuthenticateRequest.swift */,
+				C42FFB8D2B307A0D0087A243 /* AccessTokenRequest.swift */,
+				C42FFB522B30634D0087A243 /* UserDetailsRequest.swift */,
+				C42FFB532B30634D0087A243 /* UsersRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		C42FFB552B30634D0087A243 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C42FFB562B30634D0087A243 /* NetworkClient.swift */,
+				C42FFB602B30634D0087A243 /* NetworkClientImpl.swift */,
+				C42FFB572B30634D0087A243 /* Models */,
+				C42FFB5A2B30634D0087A243 /* Extensions */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C42FFB572B30634D0087A243 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C42FFB582B30634D0087A243 /* HTTPFields.swift */,
+				C42FFB592B30634D0087A243 /* NetworkError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C42FFB5A2B30634D0087A243 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C42FFB5B2B30634D0087A243 /* URLRequest+curl.swift */,
+				C42FFB5C2B30634D0087A243 /* String+AppStorageKey.swift */,
+				C42FFB5D2B30634D0087A243 /* Codable+Extension.swift */,
+				C42FFB5E2B30634D0087A243 /* NetworkError+Extensions.swift */,
+				C42FFB5F2B30634D0087A243 /* Data+prettyPrinted.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C42FFB612B30634D0087A243 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				C42FFB622B30634D0087A243 /* RouterStackView.swift */,
+				C42FFB632B30634D0087A243 /* Router.swift */,
+				C42FFB642B30634D0087A243 /* PathInfo.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		C42FFB7F2B30638F0087A243 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				C42FFB802B30638F0087A243 /* AppConfig.xcconfig */,
+				C42FFB812B30638F0087A243 /* AppEnvironment.swift */,
+				C42FFB982B308FA40087A243 /* AppEnvironment+EnvironmentNonAuthenticated.swift */,
+				C42FFB962B308F5E0087A243 /* AppEnvironment+Authenticated.swift */,
+				C42FFB942B308E690087A243 /* AppEnvionment+Failing.swift */,
+				C42FFB922B308DDB0087A243 /* AppEnvironment+Mock.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		C42FFB862B3066600087A243 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C42FFB442B30634D0087A243 /* APIException.swift */,
+				C42FFB452B30634D0087A243 /* APIEnvironment.swift */,
+				C42FFB542B30634D0087A243 /* APIRequest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C42FFBA02B3099A40087A243 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C42FFB282B3044930087A243 /* LandingView.swift */,
+				C42FFB9A2B30976F0087A243 /* SafariWebView.swift */,
+				C42FFBA12B30A7320087A243 /* AuthenticationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C42FFBA52B30B0400087A243 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C42FFBA32B30AF4E0087A243 /* AuthDeepLink.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +518,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C42FFB022B302CF50087A243 /* Preview Assets.xcassets in Resources */,
+				C42FFB822B30638F0087A243 /* AppConfig.xcconfig in Resources */,
 				C42FFAFF2B302CF50087A243 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,9 +544,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C42FFAFB2B302CF20087A243 /* ContentView.swift in Sources */,
-				C42FFAFD2B302CF20087A243 /* Item.swift in Sources */,
+				C42FFB8E2B307A0D0087A243 /* AccessTokenRequest.swift in Sources */,
+				C42FFB2D2B3044D20087A243 /* AuthenticationViewModel.swift in Sources */,
+				C42FFB912B308B3B0087A243 /* KeychainManagerMock.swift in Sources */,
+				C42FFB742B30634D0087A243 /* HTTPFields.swift in Sources */,
+				C42FFB3B2B304D390087A243 /* KeychainKey.swift in Sources */,
+				C42FFB902B307AD70087A243 /* AccessTokenResponse.swift in Sources */,
+				C42FFB9F2B3097B90087A243 /* AppCoordinator.swift in Sources */,
+				C42FFBA92B30B51C0087A243 /* UsersCoordinator.swift in Sources */,
+				C42FFB772B30634D0087A243 /* String+AppStorageKey.swift in Sources */,
+				C42FFB662B30634D0087A243 /* APIEnvironment.swift in Sources */,
+				C42FFBA42B30AF4E0087A243 /* AuthDeepLink.swift in Sources */,
+				C42FFB7B2B30634D0087A243 /* NetworkClientImpl.swift in Sources */,
+				C42FFB752B30634D0087A243 /* NetworkError.swift in Sources */,
+				C42FFB992B308FA40087A243 /* AppEnvironment+EnvironmentNonAuthenticated.swift in Sources */,
+				C42FFB952B308E690087A243 /* AppEnvionment+Failing.swift in Sources */,
+				C42FFB732B30634D0087A243 /* NetworkClient.swift in Sources */,
+				C42FFB8C2B3073680087A243 /* UserDetailsResponse.swift in Sources */,
+				C42FFB392B304D390087A243 /* KeychainManagerImpl.swift in Sources */,
+				C42FFB6F2B30634D0087A243 /* AuthenticateRequest.swift in Sources */,
+				C42FFB852B3065240087A243 /* UserResponse.swift in Sources */,
 				C42FFAF92B302CF20087A243 /* GitApp.swift in Sources */,
+				C42FFB292B3044930087A243 /* LandingView.swift in Sources */,
+				C42FFB3C2B304D390087A243 /* KeychainManager.swift in Sources */,
+				C42FFB7D2B30634D0087A243 /* Router.swift in Sources */,
+				C42FFB9B2B30976F0087A243 /* SafariWebView.swift in Sources */,
+				C42FFB402B304EEF0087A243 /* AppViewModel.swift in Sources */,
+				C42FFB652B30634D0087A243 /* APIException.swift in Sources */,
+				C42FFB782B30634D0087A243 /* Codable+Extension.swift in Sources */,
+				C42FFB972B308F5E0087A243 /* AppEnvironment+Authenticated.swift in Sources */,
+				C42FFB262B303E650087A243 /* AuthButtonStyle.swift in Sources */,
+				C42FFB932B308DDB0087A243 /* AppEnvironment+Mock.swift in Sources */,
+				C42FFB7E2B30634D0087A243 /* PathInfo.swift in Sources */,
+				C42FFB302B3047DB0087A243 /* UsersListView.swift in Sources */,
+				C42FFB9D2B3097850087A243 /* AuthenticationCoordinator.swift in Sources */,
+				C42FFB7A2B30634D0087A243 /* Data+prettyPrinted.swift in Sources */,
+				C42FFBA22B30A7320087A243 /* AuthenticationView.swift in Sources */,
+				C42FFB762B30634D0087A243 /* URLRequest+curl.swift in Sources */,
+				C42FFB832B30638F0087A243 /* AppEnvironment.swift in Sources */,
+				C42FFB702B30634D0087A243 /* UserDetailsRequest.swift in Sources */,
+				C42FFB422B3055190087A243 /* AuthenticationService.swift in Sources */,
+				C42FFB792B30634D0087A243 /* NetworkError+Extensions.swift in Sources */,
+				C42FFB7C2B30634D0087A243 /* RouterStackView.swift in Sources */,
+				C42FFB6E2B30634D0087A243 /* GitHubAPI.swift in Sources */,
+				C42FFB722B30634D0087A243 /* APIRequest.swift in Sources */,
+				C42FFB712B30634D0087A243 /* UsersRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +627,7 @@
 /* Begin XCBuildConfiguration section */
 		C42FFB192B302CF50087A243 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C42FFB802B30638F0087A243 /* AppConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -366,6 +691,7 @@
 		};
 		C42FFB1A2B302CF50087A243 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C42FFB802B30638F0087A243 /* AppConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -422,12 +748,13 @@
 		};
 		C42FFB1C2B302CF50087A243 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C42FFB802B30638F0087A243 /* AppConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"git hub users/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"GitHubUsers/Preview Content\"";
 				DEVELOPMENT_TEAM = X5E66Q9HX8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -452,12 +779,13 @@
 		};
 		C42FFB1D2B302CF50087A243 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C42FFB802B30638F0087A243 /* AppConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"git hub users/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"GitHubUsers/Preview Content\"";
 				DEVELOPMENT_TEAM = X5E66Q9HX8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -482,6 +810,7 @@
 		};
 		C42FFB1F2B302CF50087A243 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C42FFB802B30638F0087A243 /* AppConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +831,7 @@
 		};
 		C42FFB202B302CF50087A243 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C42FFB802B30638F0087A243 /* AppConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -522,6 +852,7 @@
 		};
 		C42FFB222B302CF50087A243 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C42FFB802B30638F0087A243 /* AppConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,6 +871,7 @@
 		};
 		C42FFB232B302CF50087A243 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C42FFB802B30638F0087A243 /* AppConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

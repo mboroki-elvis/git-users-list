@@ -1,0 +1,5 @@
+CLIENT_ID =  // Replace with own id
+CLIENT_SECRET =  // Replace with own secret
+APP_BASE_URL = https:/$()/api.github.com
+AUTHENTICATION_URL = https:/$()/github.com
+REDIRECT_URI = com.kwetu.gitusers:/$()/authentication

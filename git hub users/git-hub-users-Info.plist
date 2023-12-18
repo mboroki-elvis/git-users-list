@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>APP_BASE_URL</key>
+	<string>$(APP_BASE_URL)</string>
+	<key>AUTHENTICATION_URL</key>
+	<string>$(AUTHENTICATION_URL)</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -15,5 +19,11 @@
 			</array>
 		</dict>
 	</array>
+	<key>CLIENT_ID</key>
+	<string>$(CLIENT_ID)</string>
+	<key>CLIENT_SECRET</key>
+	<string>$(CLIENT_SECRET)</string>
+	<key>REDIRECT_URI</key>
+	<string>$(REDIRECT_URI)</string>
 </dict>
 </plist>
