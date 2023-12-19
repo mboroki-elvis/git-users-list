@@ -30,9 +30,12 @@ struct UserListView: View {
             viewModel.fetchData()
         }
         .refreshable {
-            viewModel.fetchData()
+            viewModel.fetchData(isRefreshing: true)
         }
+        .background(.container)
+        .navigationTitle("Github Users")
     }
+    
 }
 
 #Preview {

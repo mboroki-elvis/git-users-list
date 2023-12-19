@@ -16,7 +16,7 @@ struct UserListItemView: View {
                 // Login (Title)
                 Text(user.login)
                     .font(.headline)
-                    .foregroundColor(.blue)
+                    .foregroundColor(.onContainer)
 
                 // Name (Subtitle)
                 Text(user.name ?? "")

@@ -10,11 +10,14 @@ import Observation
         self.service = service
     }
 
-    func fetchData() {
+    func fetchData(isRefreshing: Bool = false) {
         Task {
             do {
                 defer { self.isLoading = false }
                 self.isLoading = true
+                if isRefreshing {
+                    self.users.removeAll()
+                }
                 let lastID: Int? = users.isEmpty ? .zero : users.last?.id
                 let users = try await service.getUsers(since: lastID ?? .zero)
                 self.users.append(contentsOf: users)

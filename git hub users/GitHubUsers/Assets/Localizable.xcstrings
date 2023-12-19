@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "Github Users" : {
+
+    },
     "login with" : {
       "extractionState" : "manual",
       "localizations" : {
