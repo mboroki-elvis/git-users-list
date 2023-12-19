@@ -16,7 +16,7 @@ struct UsersRequest: APIRequest {
         case .live:
             return nil
         case .mock:
-            return []
+            return [.default]
         case .failing:
             throw APIException.unknownError
         }

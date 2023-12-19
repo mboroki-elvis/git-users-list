@@ -23,7 +23,7 @@ struct AccessTokenRequest: APIRequest {
         case .live:
             return nil
         case .mock:
-            return nil
+            return .init(accessToken: "test_token", scope: "repo,user", tokenType: "bearer")
         case .failing:
             throw APIException.unknownError
         }

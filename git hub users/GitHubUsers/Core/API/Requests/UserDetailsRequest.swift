@@ -20,7 +20,17 @@ struct UserDetailsRequest: APIRequest {
         case .live:
             return nil
         case .mock:
-            return nil
+            return .init(
+                login: "test_login",
+                id: -1,
+                nodeID: "test_node",
+                avatarURL: "test_url",
+                name: "test_name",
+                blog: "test_blog",
+                followers: 1,
+                following: 2,
+                createdAt: "2023-12-19T06:48:54+0000"
+            )
         case .failing:
             throw APIException.unknownError
         }
