@@ -4,7 +4,7 @@ A simple OAuth app that lists git hub users
 
 ## APP Preview
 
-![App Preview](/app.gif)
+![App Preview](/app.mp4)
 ## User Interface
 
 The application is built using SwiftUI, ensuring a modern and intuitive user interface.
