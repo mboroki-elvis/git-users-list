@@ -32,6 +32,7 @@ final class GitHubUsersTests: XCTestCase {
         let url = "com.ketu.gitusers://authentication?code=24828ba&state=\(state)"
         sut.obtainAccessToken(url: URL(string: url)!, router: router)
         XCTAssert(sut.error == nil)
+        XCTAssertNotNil(environment.keychainManager.string(forKey: .accessToken))
     }
 }
 
