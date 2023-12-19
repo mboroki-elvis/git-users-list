@@ -40,6 +40,7 @@ final class AuthenticationServiceImplementation: AuthenticationService {
         )
         if let response = try await request.doRequest(environment: environment) {
             environment.keychainManager.set(response.accessToken, for: .accessToken)
+            return
         }
         throw AuthenticationError.requestFailed
     }

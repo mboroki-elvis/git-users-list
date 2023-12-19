@@ -1,10 +1,3 @@
-//
-//  AuthenticationView.swift
-//  GitHubUsers
-//
-//  Created by Elvis Mwenda on 18/12/2023.
-//
-
 import SwiftUI
 
 struct AuthenticationView: View {
@@ -17,10 +10,11 @@ struct AuthenticationView: View {
                 .progressViewStyle(.circular)
                 .foregroundStyle(.accent)
 
-            Text("Login you in")
+            Text(with: .login)
         }.onAppear {
             viewModel.obtainAccessToken(url: url, router: router)
         }
+        .navigationBarBackButtonHidden()
     }
 }
 

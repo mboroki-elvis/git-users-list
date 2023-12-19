@@ -2,6 +2,7 @@ import Foundation
 import Observation
 
 @Observable final class AuthenticationViewModel {
+    var error: LocalizedError?
     private let service: AuthenticationService
     init(service: AuthenticationService = AuthenticationServiceImplementation()) {
         self.service = service
@@ -12,7 +13,7 @@ import Observation
             let url = try service.authorize()
             router.push(.auth(.token(url)), presentationMode: .fullScreen)
         } catch {
-            print(error)
+            self.error = error.toLocalizeError
         }
     }
 
@@ -22,7 +23,7 @@ import Observation
             do {
                 try service.statesMatch(state: model.state)
                 try await service.getAccessToken(code: model.code)
-                router.push(.authenticated(.users))
+                router.push(.authenticated(.users), presentationMode: .fullScreen)
             } catch {
                 router.push(.auth(.authorize))
             }

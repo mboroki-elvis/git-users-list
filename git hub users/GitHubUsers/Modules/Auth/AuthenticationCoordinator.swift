@@ -16,7 +16,6 @@ struct AuthenticationCoordinator: View {
         case .token(let url):
             SafariWebView(url: url).ignoresSafeArea()
                 .onOpenURL(perform: { url in
-                    print(url)
                     router.pop()
                     router.push(.auth(.authenticating(url)))
                 })
