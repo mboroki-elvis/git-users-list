@@ -5,6 +5,7 @@ A simple OAuth app that lists git hub users
 ## APP Preview
 
 ![App Preview](/app.mp4)
+
 ## User Interface
 
 The application is built using SwiftUI, ensuring a modern and intuitive user interface.
@@ -39,6 +40,7 @@ The Movie App follows the MVVM-C (Model-View-ViewModel-Coordinator) architecture
 - **ViewModels:** Business logic resides in observable view models.
 - **UI Layer:** Implemented in SwiftUI.
 - **Dependency Injection:** The router is injected via the environment.
+
 ![DataFlow](/DataFlow.drawio.png)
 
 ## Networking
