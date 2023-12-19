@@ -4,7 +4,7 @@ A simple OAuth app that lists git hub users
 
 ## APP Preview
 
-![App Preview](/app.mp4)
+![App Preview](/app.gif)
 
 ## User Interface
 
