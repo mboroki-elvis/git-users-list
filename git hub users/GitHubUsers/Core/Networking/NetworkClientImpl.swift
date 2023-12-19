@@ -98,6 +98,7 @@ struct NetworkClientImpl: NetworkClient {
 
         } catch {
             if error is DecodingError {
+                print(error)
                 return .failure(.invalidData)
             }
             return .failure(.other(error))

@@ -11,7 +11,7 @@ enum Routes: Hashable {
 
     enum Authenticated: Hashable {
         case users
-        case userDetails(String)
+        case userDetails(UserResponse)
     }
 }
 

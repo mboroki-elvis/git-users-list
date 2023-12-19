@@ -1,6 +1,6 @@
 import Foundation
 
-struct UserResponse: Codable, Equatable, Identifiable {
+struct UserResponse: Codable, Equatable, Identifiable, Hashable {
     static func == (lhs: UserResponse, rhs: UserResponse) -> Bool {
         return lhs.id == rhs.id
     }
@@ -40,6 +40,10 @@ struct UserResponse: Codable, Equatable, Identifiable {
     let type: String
     let siteAdmin: Bool
     var name: String?
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
 }
 
 extension UserResponse {

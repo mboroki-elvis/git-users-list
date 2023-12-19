@@ -11,8 +11,8 @@ struct UsersCoordinator: View {
         switch route {
         case .users:
             UserListView()
-        case .userDetails(let string):
-            Text(string)
+        case .userDetails(let user):
+            UserDetails(viewModel: .init(user: user))
         }
     }
 }

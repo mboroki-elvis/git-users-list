@@ -1,6 +1,20 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%lld" : {
+
+    },
+    "Account Created:" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Account Created: %@"
+          }
+        }
+      }
+    },
     "Github Users" : {
 
     },
@@ -36,6 +50,9 @@
           }
         }
       }
+    },
+    "User Details" : {
+      "extractionState" : "manual"
     }
   },
   "version" : "1.0"

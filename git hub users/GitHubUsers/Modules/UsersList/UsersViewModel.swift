@@ -2,10 +2,12 @@ import Foundation
 import Observation
 
 @Observable final class UsersViewModel {
+    var isLoading = false
+    var error: LocalizedError?
+
     private(set) var users = [UserResponse]()
     private let service: UsersService
-    var error: LocalizedError?
-    var isLoading = false
+
     init(service: UsersService = UsersServiceImplementation()) {
         self.service = service
     }

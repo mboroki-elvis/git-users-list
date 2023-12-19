@@ -2,19 +2,23 @@ import SwiftUI
 
 struct UserListView: View {
     @Bindable var viewModel = UsersViewModel()
-
+    @Environment(AppRouter.self) private var router: AppRouter
     var body: some View {
         ContainerView(error: viewModel.error) {
             viewModel.error = nil
         } content: {
             List {
                 ForEach(viewModel.users) { user in
-                    UserListItemView(user: user)
-                        .onAppear {
-                            if user == viewModel.users.last {
-                                viewModel.fetchData()
-                            }
+                    UserListItemView(
+                        user: user, onTap: {
+                            router.push(.authenticated(.userDetails(user)))
                         }
+                    )
+                    .onAppear {
+                        if user == viewModel.users.last {
+                            viewModel.fetchData()
+                        }
+                    }
                 }
             }
             .listStyle(PlainListStyle())
@@ -27,7 +31,7 @@ struct UserListView: View {
         }
         .background(Color.container)
         .task {
-            viewModel.fetchData()
+            viewModel.fetchData(isRefreshing: true)
         }
         .refreshable {
             viewModel.fetchData(isRefreshing: true)
@@ -35,7 +39,6 @@ struct UserListView: View {
         .background(.container)
         .navigationTitle("Github Users")
     }
-    
 }
 
 #Preview {

@@ -4,6 +4,10 @@ enum LocalizableKeys: String {
     case login = "Login you in"
     case loginWith = "login with"
     case error = "Something went wrong!"
+    case userDetails = "User Details"
+    case following = "Following"
+    case followers = "Followers"
+    case createdAt = "Account Created:"
 
     func toLocalizableKey() -> LocalizedStringKey {
         LocalizedStringKey(self.rawValue)
